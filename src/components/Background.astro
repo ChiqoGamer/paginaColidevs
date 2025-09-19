@@ -1,0 +1,79 @@
+---
+import colibriLogo from 'D:/paginaColidevs/public/colibri-web.png';
+import fondoLogo from 'D:/paginaColidevs/public/background-rojo.png';
+---
+
+
+<div id="logoColibri">
+    <img id="background" src={colibriLogo.src} alt="" aria-hidden="true" />    
+</div>
+<img id="backgroundRojo" src={fondoLogo.src} alt="" aria-hidden="true" />
+
+<style>
+
+    #logoColibri{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;            
+    }
+
+    #background{
+        width: 330px;
+        height: 330px; 
+        object-fit: contain;
+        /* position: fixed; */
+        /* top: 5%;
+        left: -5%; */
+    } 
+
+     #backgroundRojo{
+        opacity: 0.6;
+        width:100vw;
+        height: 140vh; 
+        position: fixed;
+        top: -10%;
+        left: -15%;
+    } 
+
+    @media (max-width: 1024px) {
+        #logoColibri{
+            justify-content: center;
+            align-items: end;
+            
+        }
+
+        #background{
+            margin-bottom: 4rem;
+            /* bottom: 20rem; */
+            /* width: 60vw;
+            height: 30vh; 
+            top: 63%;
+            left: 18%; */
+        } 
+
+         #backgroundRojo{
+            width:180vw;
+            height: 190vh; 
+            top: -20%;
+            left: -30%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #background{
+            width: 70vw;
+            height: 35vh; 
+        }
+    }
+
+    @media (min-width: 2000px) {
+         #background{
+            width: 600px;
+            height: 600px;
+        } 
+    }
+
+</style>

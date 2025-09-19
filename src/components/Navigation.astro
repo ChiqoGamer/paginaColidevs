@@ -1,0 +1,50 @@
+---
+import Branding from '../components/Branding.astro';
+
+---
+
+<nav class="navigation">
+    <Branding />
+    <ul>
+        <li>Servicios</li>
+        <li>Mision</li>
+        <li>Reseñas</li>
+        <li>Contacto</li>
+    </ul>
+</nav>
+
+<style>
+    .navigation {
+        width: 97%;
+        height: 60px;
+        /* background-color: rgba(195, 19, 19, 0.346); */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1000;
+        /* margin-right: 2rem; */
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        margin-right: 2rem;
+
+    }
+
+    .navigation li {
+        color: white;
+        cursor: pointer;
+        font-weight: 200;
+    }
+
+    .navigation li:hover {
+        color: gray;
+    }
+</style>
